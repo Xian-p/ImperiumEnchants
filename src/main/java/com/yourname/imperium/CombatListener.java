@@ -67,14 +67,14 @@ public class CombatListener implements Listener {
         // 6. Vampirism (Heal Self)
         int vamp = manager.getLevel(weapon, EnchantKeys.VAMPIRISM);
         if (vamp > 0 && chance(30)) {
-            double maxHP = attacker.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
+            double maxHP = attacker.getAttribute(Attribute.MAX_HEALTH).getValue();
             attacker.setHealth(Math.min(maxHP, attacker.getHealth() + (vamp * 1.0)));
         }
 
         // 7. Execute (More damage if victim is under 20% HP)
         int execute = manager.getLevel(weapon, EnchantKeys.EXECUTE);
         if (execute > 0) {
-            double maxHP = victim.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
+            double maxHP = victim.getAttribute(Attribute.MAX_HEALTH).getValue();
             if (victim.getHealth() < (maxHP * 0.2)) {
                 event.setDamage(event.getDamage() * (1 + (execute * 0.5))); // +50% dmg per level
                 attacker.playSound(attacker.getLocation(), Sound.ENTITY_ZOMBIE_VILLAGER_CURE, 1f, 2f);
