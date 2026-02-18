@@ -1,0 +1,15 @@
+# ImperiumEnchants Master Config
+
+# --- MOB DROPS ---
+# Chance for a mob to drop a custom book (0.0 - 100.0)
+drop-chance: 2.5
+allow-passive-mobs: false
+player-kill-only: true
+looting-bonus: 0.5
+max-drop-level: 2
+
+# --- ENCHANTING TABLE ---
+# Chance to get a custom enchant when using the Enchantment Table
+table-chance: 35.0
+# Minimum XP cost required to get a custom enchant (Tier 3 is usually 30)
+min-table-cost: 20
