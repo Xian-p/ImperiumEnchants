@@ -36,4 +36,32 @@ public class EnchantKeys {
     public static final String SATURATION = "saturation";     // Feeds player (Helmet)
     public static final String JELLY_LEGS = "jellylegs";      // No Fall Damage (Boots)
     public static final String OBSIDIAN_SHIELD = "shield";    // Fire Resistance (Leggings)
+    public static final String[] ALL_ENCHANTS = {
+        VAMPIRISM,
+        THUNDERLORD,
+        VENOM,
+        WITHER,
+        FROZEN,
+        BLIND,
+        CONFUSION,
+        DOUBLE_STRIKE,
+        EXECUTE,
+        BACKSTAB,
+        INQUISITOR,
+        GIANT_SLAYER,
+        EXPLOSIVE,
+        SNIPER,
+        BLAZE,
+        TELEKINESIS,
+        AUTOSMELT,
+        VEIN_MINER,
+        HASTE,
+        EXPERIENCE,
+        SPEED,
+        SPRINGS,
+        NIGHT_VISION,
+        SATURATION,
+        JELLY_LEGS,
+        OBSIDIAN_SHIELD
+};
 }
