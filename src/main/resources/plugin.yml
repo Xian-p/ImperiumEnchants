@@ -1,0 +1,9 @@
+name: ImperiumEnchants
+version: 1.5
+main: com.yourname.imperium.ImperiumEnchants
+api-version: 1.21
+description: Full Custom Enchantments Plugin
+commands:
+  giveenchant:
+    description: Admin command
+    permission: imperium.admin
